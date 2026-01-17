@@ -1,1 +1,62 @@
-lets goooooo
+# INDEX
+def m1():
+	import requests
+
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	result = requests.get("https://vissora.onrender.com/init", headers=headers)
+	print(result.json())
+
+# AUTH
+def m2():
+	import requests
+
+	params = {"email": "bubuli.sahu01@example.com"}
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	result = requests.get("https://vissora.onrender.com/authMail", headers=headers, params=params)
+	print(result.json())
+
+# POST
+def m3():
+	import requests
+	import time
+
+	absentRoll = [1]
+	totalStudents = 60
+	captureTime = time.time() # store this for later usage
+
+	params = {"collegeID": "1015", "classID": "class3", "captureTime": captureTime, "totalStudents": totalStudents}
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	req = requests.post("https://vissora.onrender.com/addRoll", headers=headers, params=params, json=absentRoll)
+	print(req.json())
+# m3()
+# UPDATE
+def m4():
+	import requests
+
+	absentRoll = [30]
+	totalStudents = 50
+	captureTime = 1766745158.6520643 # capture time that was stored earlier
+
+	params = {"collegeID": "1013", "classID": "class1", "captureTime": captureTime, "totalStudents": totalStudents}
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	req = requests.post("https://vissora.onrender.com/updateRoll", headers=headers, params=params, json=absentRoll)
+	print(req.json())
+
+# GET
+def m5():
+	import requests
+
+	params = {"collegeName": "ALLEN, BHUBANESWAR", "className": "mathematics", "maxResult": 0}
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	result = requests.get("https://vissora.onrender.com/getRoll", headers=headers, params=params)
+	result = result.json()
+	print(result)
+# m5()
+
+# GET_COLLEGE_DATA
+def m6():
+	import requests
+
+	headers = {"x-api-key": "IPvDyV20bVryk9d5g_S7pkDXvI0x53BTSW1_WQQN2DE"}
+	result = requests.get("https://vissora.onrender.com/getCollegeNames", headers=headers)
+	print(result.json())
