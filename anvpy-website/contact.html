@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AnvPy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">AnvPy</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ecosystem.html" class="nav-link">Ecosystem</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="docs.html" class="nav-link">Docs</a>
+                <a href="showcase.html" class="nav-link">Showcase</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <a href="download.html" class="btn btn-primary nav-download">Download</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-animate="fade-up">Get in Touch</h1>
+            <p class="page-subtitle" data-animate="fade-up">Have questions or feedback? We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-wrapper" data-animate="slide-right">
+                    <h2>Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Tell us more..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info" data-animate="slide-left">
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>Community Support</h3>
+                        <p>Join our Discord or Forum for community support and discussions</p>
+                        <a href="community.html" class="info-link">Visit Community</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">📚</div>
+                        <h3>Documentation</h3>
+                        <p>Find answers in our comprehensive documentation</p>
+                        <a href="docs.html" class="info-link">Browse Docs</a>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">🐛</div>
+                        <h3>Bug Reports</h3>
+                        <p>Report issues on GitHub for faster resolution</p>
+                        <a href="#" class="info-link">Open Issue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section report-section" id="report">
+        <div class="container">
+            <div class="report-content" data-animate="fade-up">
+                <h2>Report a Problem</h2>
+                <p>Encountered a bug or issue? Help us improve AnvPy by reporting it</p>
+                
+                <div class="report-form-wrapper">
+                    <form class="contact-form" id="reportForm">
+                        <div class="form-group">
+                            <label for="reportType">Problem Type</label>
+                            <select id="reportType" name="reportType" required>
+                                <option value="">Select type</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="crash">Application Crash</option>
+                                <option value="performance">Performance Issue</option>
+                                <option value="feature">Feature Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="reportName">Name</label>
+                                <input type="text" id="reportName" name="reportName" required placeholder="Your name">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="reportEmail">Email</label>
+                                <input type="email" id="reportEmail" name="reportEmail" required placeholder="your.email@example.com">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reportTitle">Issue Title</label>
+                            <input type="text" id="reportTitle" name="reportTitle" required placeholder="Brief description of the issue">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reportDescription">Detailed Description</label>
+                            <textarea id="reportDescription" name="reportDescription" rows="6" required placeholder="Please provide as much detail as possible including:
+- What were you trying to do?
+- What happened?
+- What did you expect to happen?
+- Steps to reproduce the issue"></textarea>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="version">AnvPy Version</label>
+                                <input type="text" id="version" name="version" placeholder="e.g., AnvPyX 3.0.0">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="device">Device/OS</label>
+                                <input type="text" id="device" name="device" placeholder="e.g., Android 12, Samsung Galaxy S21">
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-large">Submit Report</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AnvPy</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">The complete Python ecosystem for Android development</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="docs.html">Documentation</a>
+                    <a href="download.html">Download</a>
+                    <a href="showcase.html">Showcase</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="community.html">Join Community</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html#report">Report Problem</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AnvPy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
