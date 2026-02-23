@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnvPy - The Complete Python Ecosystem for Android</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">AnvPy</span>
+                <span class="logo-bracket">/&gt;</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="ecosystem.html" class="nav-link">Ecosystem</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="docs.html" class="nav-link">Docs</a>
+                <a href="showcase.html" class="nav-link">Showcase</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="download.html" class="btn btn-primary nav-download">Download</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">The Complete Python Ecosystem for Android</h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typingText"></span>
+                    <span class="cursor">_</span>
+                </div>
+                <p class="hero-description fade-in-delay-1">Build mobile apps, games, and AI applications directly on Android devices with the full power of Python</p>
+                <div class="hero-buttons fade-in-delay-2">
+                    <a href="download.html" class="btn btn-primary btn-large">Download AnvPyX</a>
+                    <a href="docs.html" class="btn btn-secondary btn-large">View Docs</a>
+                </div>
+            </div>
+        </div>
+        <div class="hero-glow"></div>
+    </section>
+
+    <section class="section ecosystem-overview">
+        <div class="container">
+            <h2 class="section-title" data-animate="fade-up">Complete Ecosystem</h2>
+            <p class="section-subtitle" data-animate="fade-up">Everything you need to build, test, and deploy Python applications on Android</p>
+            
+            <div class="ecosystem-grid">
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🐍</div>
+                    <h3>Python Runtime</h3>
+                    <p>Full native Python runtime optimized for ARM processors</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">📦</div>
+                    <h3>AnvBuild</h3>
+                    <p>Native package management and build system</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🤖</div>
+                    <h3>AI/ML Support</h3>
+                    <p>OpenCV, TensorFlow, PyTorch, MediaPipe</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🎨</div>
+                    <h3>Alloy GUI</h3>
+                    <p>Native Android UI framework in Python</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🎭</div>
+                    <h3>Kivy Support</h3>
+                    <p>Cross-platform GUI framework</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🎮</div>
+                    <h3>Pygame</h3>
+                    <p>2D game development framework</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🌙</div>
+                    <h3>Luna Engine</h3>
+                    <p>Advanced 2D game engine for mobile</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">⭐</div>
+                    <h3>Nova Engine</h3>
+                    <p>3D game engine with OpenGL rendering</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">💻</div>
+                    <h3>Code Editor</h3>
+                    <p>Built-in professional editor with syntax highlighting</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">📱</div>
+                    <h3>AnvPack</h3>
+                    <p>Convert Python apps to installable APKs</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">🏪</div>
+                    <h3>AnvStore</h3>
+                    <p>App publishing and distribution platform</p>
+                </div>
+                
+                <div class="ecosystem-card" data-animate="scale-in">
+                    <div class="card-icon">⚡</div>
+                    <h3>AnvPy CLI</h3>
+                    <p>Desktop development tool for PC</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section code-demo">
+        <div class="container">
+            <h2 class="section-title" data-animate="fade-up">Write Beautiful Code</h2>
+            <p class="section-subtitle" data-animate="fade-up">Build native Android applications with pure Python</p>
+            
+            <div class="code-editor-wrapper" data-animate="scale-in">
+                <div class="code-editor-header">
+                    <div class="editor-controls">
+                        <span class="control-dot red"></span>
+                        <span class="control-dot yellow"></span>
+                        <span class="control-dot green"></span>
+                    </div>
+                    <span class="editor-title">main.py</span>
+                </div>
+                <div class="code-editor-body">
+                    <pre class="code-content" id="codeContent"></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section cross-platform">
+        <div class="container">
+            <h2 class="section-title" data-animate="fade-up">Cross-Platform Development</h2>
+            <p class="section-subtitle" data-animate="fade-up">Develop on PC, deploy to Android</p>
+            
+            <div class="platform-flow" data-animate="fade-up">
+                <div class="platform-step">
+                    <div class="platform-icon">💻</div>
+                    <h3>PC Development</h3>
+                    <p>Use AnvPy CLI on Windows, Linux, or Mac</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="platform-step">
+                    <div class="platform-icon">📱</div>
+                    <h3>Android Build</h3>
+                    <p>Deploy to AnvPyX on Android devices</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="platform-step">
+                    <div class="platform-icon">📦</div>
+                    <h3>APK Package</h3>
+                    <p>Create installable APK with AnvPack</p>
+                </div>
+                <div class="flow-arrow">→</div>
+                <div class="platform-step">
+                    <div class="platform-icon">🏪</div>
+                    <h3>Distribution</h3>
+                    <p>Publish on AnvStore</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section download-preview">
+        <div class="container">
+            <h2 class="section-title" data-animate="fade-up">Get Started Today</h2>
+            <p class="section-subtitle" data-animate="fade-up">Choose your platform</p>
+            
+            <div class="download-cards">
+                <div class="download-card featured" data-animate="slide-up">
+                    <div class="badge">Latest</div>
+                    <div class="download-icon">🚀</div>
+                    <h3>AnvPyX</h3>
+                    <p>Next generation Python platform for Android</p>
+                    <a href="download.html" class="btn btn-primary">Download</a>
+                </div>
+                
+                <div class="download-card" data-animate="slide-up">
+                    <div class="download-icon">📱</div>
+                    <h3>AnvPy</h3>
+                    <p>Stable version for Android development</p>
+                    <a href="download.html" class="btn btn-secondary">Download</a>
+                </div>
+                
+                <div class="download-card" data-animate="slide-up">
+                    <div class="download-icon">⚡</div>
+                    <h3>AnvPy CLI</h3>
+                    <p>Desktop development tool</p>
+                    <a href="download.html" class="btn btn-secondary">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AnvPy</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">The complete Python ecosystem for Android development</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="docs.html">Documentation</a>
+                    <a href="download.html">Download</a>
+                    <a href="showcase.html">Showcase</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="community.html">Join Community</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html#report">Report Problem</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AnvPy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

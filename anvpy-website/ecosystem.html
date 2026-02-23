@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecosystem - AnvPy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">AnvPy</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ecosystem.html" class="nav-link active">Ecosystem</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="docs.html" class="nav-link">Docs</a>
+                <a href="showcase.html" class="nav-link">Showcase</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="download.html" class="btn btn-primary nav-download">Download</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-animate="fade-up">Complete Ecosystem</h1>
+            <p class="page-subtitle" data-animate="fade-up">A comprehensive suite of tools for Python development on Android</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">🐍</div>
+                <div class="detail-content">
+                    <h2>Python Runtime</h2>
+                    <p>Full native Python runtime optimized for Android ARM processors. Supports the complete Python standard library with offline execution capabilities. Built from source specifically for mobile ARM64 architecture, ensuring maximum performance and compatibility.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">Python 3.11</span>
+                        <span class="feature-tag">ARM64 Optimized</span>
+                        <span class="feature-tag">Offline Support</span>
+                        <span class="feature-tag">Full Stdlib</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">📦</div>
+                <div class="detail-content">
+                    <h2>AnvBuild</h2>
+                    <p>Native package management and build system designed specifically for mobile environments. Install and manage Python packages with optimized builds for Android. Simple command-line interface for dependency management.</p>
+                    <div class="code-snippet">
+                        <code>$ anvbuild install opencv<br>$ anvbuild install tensorflow<br>$ anvbuild update</code>
+                    </div>
+                    <div class="detail-features">
+                        <span class="feature-tag">Package Manager</span>
+                        <span class="feature-tag">Mobile Optimized</span>
+                        <span class="feature-tag">Fast Builds</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">🤖</div>
+                <div class="detail-content">
+                    <h2>AI/ML Support</h2>
+                    <p>Comprehensive AI and machine learning capabilities with optimized builds of industry-standard libraries. Run computer vision, neural networks, and AI applications directly on Android devices.</p>
+                    <div class="ai-libraries">
+                        <div class="library-card">
+                            <h4>OpenCV</h4>
+                            <p>Computer vision and image processing</p>
+                        </div>
+                        <div class="library-card">
+                            <h4>TensorFlow</h4>
+                            <p>Deep learning framework</p>
+                        </div>
+                        <div class="library-card">
+                            <h4>PyTorch</h4>
+                            <p>Machine learning library</p>
+                        </div>
+                        <div class="library-card">
+                            <h4>MediaPipe</h4>
+                            <p>ML solutions for mobile</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">🎨</div>
+                <div class="detail-content">
+                    <h2>Alloy GUI</h2>
+                    <p>Native Android UI framework for building real Android applications using pure Python. Create beautiful, responsive interfaces with native Android components and Material Design support.</p>
+                    <div class="code-snippet">
+                        <code>from alloy import App, Button, Layout<br><br>app = App("My App")<br>layout = Layout.vertical()<br>button = Button("Click Me")<br>layout.add(button)<br>app.run()</code>
+                    </div>
+                    <div class="detail-features">
+                        <span class="feature-tag">Native UI</span>
+                        <span class="feature-tag">Material Design</span>
+                        <span class="feature-tag">Python API</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">🎭</div>
+                <div class="detail-content">
+                    <h2>Kivy Support</h2>
+                    <p>Full support for the Kivy cross-platform GUI framework. Build applications that run on Android, iOS, Windows, Linux, and macOS from a single codebase.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">Cross-Platform</span>
+                        <span class="feature-tag">Touch Support</span>
+                        <span class="feature-tag">Custom Widgets</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">🎮</div>
+                <div class="detail-content">
+                    <h2>Pygame</h2>
+                    <p>Popular 2D game development framework optimized for mobile. Create games with sprite management, collision detection, sound, and input handling.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">2D Graphics</span>
+                        <span class="feature-tag">Sound Engine</span>
+                        <span class="feature-tag">Physics</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">🌙</div>
+                <div class="detail-content">
+                    <h2>Luna Engine</h2>
+                    <p>Advanced 2D game engine specifically optimized for mobile devices. Features include particle systems, animation framework, tilemap support, and advanced rendering capabilities.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">Particle Systems</span>
+                        <span class="feature-tag">Tilemaps</span>
+                        <span class="feature-tag">Animations</span>
+                        <span class="feature-tag">Mobile Optimized</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">⭐</div>
+                <div class="detail-content">
+                    <h2>Nova Engine</h2>
+                    <p>Powerful 3D game engine with OpenGL rendering support. Build immersive 3D games with scene management, camera systems, lighting, and physics simulation.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">3D Rendering</span>
+                        <span class="feature-tag">OpenGL</span>
+                        <span class="feature-tag">Physics Engine</span>
+                        <span class="feature-tag">Scene Manager</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">💻</div>
+                <div class="detail-content">
+                    <h2>Code Editor</h2>
+                    <p>Built-in professional code editor with syntax highlighting for Python, multiple color themes, auto-indentation, and code completion. Write code efficiently directly on your device.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">Syntax Highlighting</span>
+                        <span class="feature-tag">Auto-Complete</span>
+                        <span class="feature-tag">Multiple Themes</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">📱</div>
+                <div class="detail-content">
+                    <h2>AnvPack</h2>
+                    <p>Convert your Python applications into installable APK files. Package your apps with custom icons, permissions, and configurations for distribution.</p>
+                    <div class="code-snippet">
+                        <code>$ anvpack build myapp<br>$ anvpack sign myapp.apk<br>$ anvpack release</code>
+                    </div>
+                    <div class="detail-features">
+                        <span class="feature-tag">APK Builder</span>
+                        <span class="feature-tag">Custom Icons</span>
+                        <span class="feature-tag">Permissions</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-right">
+                <div class="detail-icon">🏪</div>
+                <div class="detail-content">
+                    <h2>AnvStore</h2>
+                    <p>App publishing and distribution platform for AnvPy applications. Share your creations with the community, discover new apps, and manage updates.</p>
+                    <div class="detail-features">
+                        <span class="feature-tag">App Publishing</span>
+                        <span class="feature-tag">Distribution</span>
+                        <span class="feature-tag">Updates</span>
+                        <span class="feature-tag">Community</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ecosystem-detail" data-animate="slide-left">
+                <div class="detail-icon">⚡</div>
+                <div class="detail-content">
+                    <h2>AnvPy CLI</h2>
+                    <p>Desktop development tool for Windows, Linux, and macOS. Create projects, manage dependencies, build APKs, and deploy applications from your PC to Android devices.</p>
+                    <div class="code-snippet">
+                        <code>$ anvpy init myproject<br>$ anvpy add package opencv<br>$ anvpy build apk<br>$ anvpy deploy</code>
+                    </div>
+                    <div class="detail-features">
+                        <span class="feature-tag">Cross-Platform CLI</span>
+                        <span class="feature-tag">Project Manager</span>
+                        <span class="feature-tag">Build Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AnvPy</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">The complete Python ecosystem for Android development</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="docs.html">Documentation</a>
+                    <a href="download.html">Download</a>
+                    <a href="showcase.html">Showcase</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="community.html">Join Community</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html#report">Report Problem</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AnvPy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
