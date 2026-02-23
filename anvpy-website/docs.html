@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - AnvPy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="animated-bg"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">AnvPy</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </a>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="ecosystem.html" class="nav-link">Ecosystem</a>
+                <a href="features.html" class="nav-link">Features</a>
+                <a href="docs.html" class="nav-link active">Docs</a>
+                <a href="showcase.html" class="nav-link">Showcase</a>
+                <a href="community.html" class="nav-link">Community</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            <a href="download.html" class="btn btn-primary nav-download">Download</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-hero">
+        <div class="container">
+            <h1 class="page-title" data-animate="fade-up">Documentation</h1>
+            <p class="page-subtitle" data-animate="fade-up">Everything you need to get started with AnvPy</p>
+        </div>
+    </section>
+
+    <section class="section docs-section">
+        <div class="container">
+            <div class="docs-layout">
+                <aside class="docs-sidebar">
+                    <nav class="docs-nav">
+                        <a href="#getting-started" class="docs-nav-link active">Getting Started</a>
+                        <a href="#installation" class="docs-nav-link">Installation</a>
+                        <a href="#first-app" class="docs-nav-link">Create First App</a>
+                        <a href="#build-apk" class="docs-nav-link">Build APK</a>
+                        <a href="#deploy" class="docs-nav-link">Deploy App</a>
+                    </nav>
+                </aside>
+                
+                <main class="docs-content">
+                    <section id="getting-started" class="doc-section" data-animate="fade-up">
+                        <h2>Getting Started</h2>
+                        <p>Welcome to AnvPy! This guide will help you set up your development environment and create your first Python application for Android.</p>
+                        
+                        <div class="info-box">
+                            <h4>Prerequisites</h4>
+                            <ul>
+                                <li>Android device with Android 7.0 or higher</li>
+                                <li>Basic knowledge of Python programming</li>
+                                <li>500MB of free storage space</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="installation" class="doc-section" data-animate="fade-up">
+                        <h2>Installation</h2>
+                        
+                        <h3>Installing AnvPyX on Android</h3>
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Download APK</h4>
+                                <p>Download the latest AnvPyX APK from the <a href="download.html">download page</a>.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Enable Installation</h4>
+                                <p>Go to Settings > Security and enable "Install from Unknown Sources" for your browser or file manager.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Install APK</h4>
+                                <p>Open the downloaded APK file and follow the installation prompts.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Launch AnvPyX</h4>
+                                <p>Open the AnvPyX app from your app drawer. The first launch will initialize the Python environment.</p>
+                            </div>
+                        </div>
+
+                        <h3>Installing AnvPy CLI on Desktop</h3>
+                        <div class="code-block">
+                            <div class="code-header">Terminal</div>
+                            <pre><code># Windows
+curl -o anvpy-cli-setup.exe https://anvpy.dev/downloads/cli/windows
+anvpy-cli-setup.exe
+
+# Linux
+curl -o anvpy-cli.sh https://anvpy.dev/downloads/cli/linux
+sudo bash anvpy-cli.sh
+
+# macOS
+curl -o anvpy-cli.pkg https://anvpy.dev/downloads/cli/macos
+sudo installer -pkg anvpy-cli.pkg -target /</code></pre>
+                        </div>
+                    </section>
+
+                    <section id="first-app" class="doc-section" data-animate="fade-up">
+                        <h2>Create Your First App</h2>
+                        
+                        <h3>Using Alloy GUI Framework</h3>
+                        <p>Let's create a simple "Hello World" application using the Alloy framework:</p>
+                        
+                        <div class="code-block">
+                            <div class="code-header">hello_world.py</div>
+                            <pre><code>from alloy import App, Button, TextView, Layout
+
+class HelloApp(App):
+    def __init__(self):
+        super().__init__("Hello World")
+        
+    def on_create(self):
+        # Create layout
+        layout = Layout.vertical()
+        
+        # Add text view
+        text = TextView("Welcome to AnvPy!")
+        text.set_text_size(24)
+        layout.add(text)
+        
+        # Add button
+        button = Button("Click Me")
+        button.on_click(self.button_clicked)
+        layout.add(button)
+        
+        self.set_content_view(layout)
+    
+    def button_clicked(self):
+        self.show_toast("Hello from AnvPy!")
+
+if __name__ == "__main__":
+    app = HelloApp()
+    app.run()</code></pre>
+                        </div>
+                        
+                        <h3>Running Your App</h3>
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <p>Open AnvPyX and create a new project</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <p>Copy the code above into your main.py file</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <p>Tap the "Run" button to execute your application</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="build-apk" class="doc-section" data-animate="fade-up">
+                        <h2>Build APK</h2>
+                        
+                        <p>Convert your Python application into an installable APK file using AnvPack:</p>
+                        
+                        <div class="code-block">
+                            <div class="code-header">Terminal</div>
+                            <pre><code># Initialize project for packaging
+anvpack init myapp
+
+# Configure app details
+anvpack config --name "My App" --version "1.0.0"
+anvpack config --icon "icon.png" --package "com.myapp"
+
+# Build APK
+anvpack build
+
+# Output: myapp-1.0.0.apk</code></pre>
+                        </div>
+                        
+                        <div class="info-box warning">
+                            <h4>Important Notes</h4>
+                            <ul>
+                                <li>Ensure all dependencies are included in your project</li>
+                                <li>Test your app thoroughly before building</li>
+                                <li>Use appropriate permissions in the manifest</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section id="deploy" class="doc-section" data-animate="fade-up">
+                        <h2>Deploy Your App</h2>
+                        
+                        <h3>Testing on Device</h3>
+                        <p>Install and test your APK directly on your Android device:</p>
+                        
+                        <div class="code-block">
+                            <div class="code-header">Terminal</div>
+                            <pre><code># Install APK to connected device
+adb install myapp-1.0.0.apk
+
+# Or use AnvPy CLI
+anvpy deploy myapp-1.0.0.apk</code></pre>
+                        </div>
+                        
+                        <h3>Publishing to AnvStore</h3>
+                        <div class="step-card">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Create Account</h4>
+                                <p>Sign up for a developer account on AnvStore</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Prepare App Listing</h4>
+                                <p>Add app description, screenshots, and metadata</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Upload APK</h4>
+                                <p>Submit your signed APK for review</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step-card">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>Publish</h4>
+                                <p>Once approved, your app will be available on AnvStore</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="doc-section" data-animate="fade-up">
+                        <h2>Next Steps</h2>
+                        
+                        <div class="next-steps-grid">
+                            <a href="ecosystem.html" class="next-step-card">
+                                <h4>Explore Ecosystem</h4>
+                                <p>Learn about all available tools and libraries</p>
+                            </a>
+                            
+                            <a href="community.html" class="next-step-card">
+                                <h4>Join Community</h4>
+                                <p>Connect with other developers</p>
+                            </a>
+                            
+                            <a href="showcase.html" class="next-step-card">
+                                <h4>View Examples</h4>
+                                <p>Get inspired by community projects</p>
+                            </a>
+                        </div>
+                    </section>
+                </main>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-bracket">&lt;</span>
+                        <span class="logo-text">AnvPy</span>
+                        <span class="logo-bracket">/&gt;</span>
+                    </div>
+                    <p class="footer-description">The complete Python ecosystem for Android development</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <a href="docs.html">Documentation</a>
+                    <a href="download.html">Download</a>
+                    <a href="showcase.html">Showcase</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <a href="community.html">Join Community</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Discord</a>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <a href="contact.html">Contact</a>
+                    <a href="contact.html#report">Report Problem</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 AnvPy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
